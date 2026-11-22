@@ -1,18 +1,17 @@
-org: trainwithshubham
+org: spt199121
 app: aws-node-http-api-project
 service: aws-node-http-api-project
-frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: nodejs14.x
-  region: us-east-1
+  runtime: nodejs22.x
+  region: ap-south-1
   iamRoleStatements:
     - Effect: Allow
       Action:
         - dynamodb:*
       Resource:
-        - arn:aws:dynamodb:us-east-1:626072240565:table/KaamKaro
+        - arn:aws:dynamodb:ap-south-1:905418283302:table/KaamKaro
 
 functions:
   hello:
